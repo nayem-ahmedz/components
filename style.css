@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0; min-height: 100vh;
+}
+
+/* Universsal Navigation */
+.universal-nav{
+    background-color: #eee; position: fixed; top: 50px; right: 15px;
+    padding: 10px; width: 60px; height: 62px; overflow: hidden; transition: all 0.3s;
+}
+#profile-btn{
+    width: fit-content; margin: 0 0 5px auto; font-size: 1.4rem; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#profile-btn > i{
+    padding: 10px; border-radius: 50%;
+}
+#profile-btn > i:hover{
+    background-color: black; color: white;
+}
+.close-btn{
+    transform: scale(1.5);
+}
+.close-btn:hover{
+    color: red;
+}
+
+
+#user-name{
+    margin: 0; margin-bottom: 5px; font-size: 1.5rem;
+}
+.navigation{
+    list-style-type: none; padding: 0; margin: 0;
+}
+.navigation li a:link, .navigation li a:visited{
+    text-decoration: none; display: block; padding: 8px 5px; border-radius: 5px;
+}
+.navigation li a:hover{
+    background-color: blue; color: white;
+}
+
+.social-link{
+    text-align: center; margin-top: 8px;
+}
+.social-link > a:link, .social-link > a:visited{
+    color: black; text-decoration: none; display: inline-block; font-size: 1.4rem; padding: 8px;
+}
+.social-link > a:hover{
+    color: blue;
+}
+
