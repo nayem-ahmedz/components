@@ -1,15 +1,19 @@
-let profileBtn = document.getElementById('profile-btn');
+let profileBtn = document.getElementById('cB-profile');
+let closeBtn = document.getElementById('cB-close');
 let sectionNav = document.getElementById('section-nav');
-let closeBtn = document.querySelector('.close-btn');
 
 profileBtn.addEventListener('click', displayNav);
+closeBtn.addEventListener('click', closeNav);
 
 function displayNav(){
-    sectionNav.style.height = '250px';
+    sectionNav.style.height = '270px';
     sectionNav.style.width = '250px';
-    profileBtn.innerHTML = '<span class="close-btn" onclick="closeNav()">x</span>';
+    profileBtn.style.display = 'none';
+    closeBtn.style.display = 'inline-block';
 }
 function closeNav(){
+    closeBtn.style.display = 'none';
     sectionNav.style.height = '62px';
     sectionNav.style.width = '60px';
+    profileBtn.style.display = 'block';
 }
