@@ -1,0 +1,53 @@
+/* Universsal Navigation */
+#section-nav{
+    background-color: #eee; position: fixed; top: 40px; right: 15px; border-radius: 5px;
+    padding: 10px; width: 60px; height: 62px; overflow: hidden; transition: all 0.5s; box-shadow: 0 0 5px rgba(0,0,0, 0.7); opacity: 0.5;
+}
+#section-nav:hover{
+    opacity: 1.0;
+}
+#corner-btn{
+    margin: 0 0 5px auto; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: right;
+}
+#corner-btn > button{
+    border: none; font-size: 1.4rem; padding: 0;
+}
+#corner-btn i{
+    padding: 10px 12px; border-radius: 50%;
+}
+#corner-btn i:hover{
+    background-color: black; color: white;
+}
+#cB-close{
+    display: none;
+}
+#cB-close > i{
+    color: red;
+}
+#cB-close > i:hover{
+    background-color: red;
+}
+
+
+#user-name{
+    margin: 0; margin-bottom: 5px; font-size: 1.5rem;
+}
+.navigation{
+    list-style-type: none; padding: 0; margin: 0;
+}
+.navigation li a:link, .navigation li a:visited{
+    text-decoration: none; display: block; padding: 8px 10px; border-radius: 5px; cursor: not-allowed;
+}
+.navigation li a:hover{
+    background-color: rgba(0,0,0, 0.5); color: white;
+}
+
+.social-link{
+    text-align: center; margin-top: 8px;
+}
+.social-link > a:link, .social-link > a:visited{
+    color: rgba(0,0,0, 0.8); text-decoration: none; display: inline-block; font-size: 1.4rem; padding: 8px; transition: all 0.3s;
+}
+.social-link > a:hover{
+    color: blue; transform: scale(1.25);
+}
