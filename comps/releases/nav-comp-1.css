@@ -1,7 +1,7 @@
 /* Universsal Navigation */
 #section-nav{
-    background-color: #eee; position: fixed; top: 40px; right: 15px; border-radius: 5px;
-    padding: 10px; width: 60px; height: 62px; overflow: hidden; transition: all 0.5s; box-shadow: 0 0 5px rgba(0,0,0, 0.7); opacity: 0.5;
+    background-color: #eee; position: fixed; top: 40px; right: 30px; border-radius: 5px;
+    padding: 10px 10px 0; width: 60px; height: 62px; overflow: hidden; transition: all 0.5s; box-shadow: 0 0 5px rgba(0,0,0, 0.7); opacity: 0.5; font-family: Consolas, "Courier New", Courier, monospace;
 }
 #section-nav:hover{
     opacity: 1.0;
@@ -16,7 +16,7 @@
     padding: 10px 12px; border-radius: 50%;
 }
 #corner-btn i:hover{
-    background-color: black; color: white;
+    background-color: black; color: white; animation-name: hipHop; animation-duration: 2s;
 }
 #cB-close{
     display: none;
@@ -32,11 +32,17 @@
 #user-name{
     margin: 0; margin-bottom: 5px; font-size: 1.5rem;
 }
+#user-role{
+    margin: 8px auto 0;
+}
 .navigation{
     list-style-type: none; padding: 0; margin: 0;
 }
 .navigation li a:link, .navigation li a:visited{
     text-decoration: none; display: block; padding: 8px 10px; border-radius: 5px; cursor: not-allowed;
+}
+.navigation li a::before{
+    content: '~ ';
 }
 .navigation li a:hover{
     background-color: rgba(0,0,0, 0.5); color: white;
@@ -50,4 +56,26 @@
 }
 .social-link > a:hover{
     color: blue; transform: scale(1.25);
+}
+
+/* Animation on corner button : profile/close */
+@keyframes hipHop{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.15);
+    }
+    75%{
+        transform: scale(0.85);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* Media Screen */
+@media screen and (max-width: 425px){
+    #section-nav{
+        right: 15px;
+    }
 }

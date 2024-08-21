@@ -6,14 +6,18 @@ profileBtn.addEventListener('click', displayNav);
 closeBtn.addEventListener('click', closeNav);
 
 function displayNav(){
-    sectionNav.style.height = '270px';
     sectionNav.style.width = '250px';
-    profileBtn.style.display = 'none';
-    closeBtn.style.display = 'inline-block';
+    setTimeout(()=>{
+        sectionNav.style.height = '300px';
+        profileBtn.style.display = 'none';
+        closeBtn.style.display = 'inline-block';
+    }, 500);
 }
 function closeNav(){
     closeBtn.style.display = 'none';
-    sectionNav.style.height = '62px';
-    sectionNav.style.width = '60px';
     profileBtn.style.display = 'block';
+    sectionNav.style.height = '62px';
+    setTimeout(()=>{
+        sectionNav.style.width = '60px';
+    }, 500);
 }
